@@ -5,7 +5,7 @@
 int main(void)
 {
     size_t output_dot_product = 0;
-    op_result_t op_feedback = NULL;
+    op_result_t op_feedback = 0;
 
     three_d_vector_t vector_output;
     three_d_vector_t vector_1;
@@ -35,7 +35,7 @@ int main(void)
         printf("Something went wrong!\n");
     }
 
-    op_feedback = NULL;
+    op_feedback = 0;
 
     //subtract
     op_feedback = vector_sub(&vector_output, &vector_1, &vector_2);
@@ -50,7 +50,7 @@ int main(void)
         printf("Something went wrong!\n");
     }
 
-    op_feedback = NULL;
+    op_feedback = 0;
 
     //dot
     op_feedback = vector_dot_product(&output_dot_product, &vector_1, &vector_2);
@@ -64,7 +64,7 @@ int main(void)
         printf("Something went wrong!\n");
     }
 
-    op_feedback = NULL;
+    op_feedback = 0;
 
     //cross
     op_feedback = vector_cross_product(&vector_output, &vector_1, &vector_2);
@@ -79,7 +79,7 @@ int main(void)
         printf("Something went wrong!\n");
     }
 
-    op_feedback = NULL;
+    op_feedback = 0;
 
     return 0;
 }

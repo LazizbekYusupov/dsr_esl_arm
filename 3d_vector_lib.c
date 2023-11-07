@@ -57,7 +57,7 @@ op_result_t vector_cross_product(three_d_vector_t* output_vector,
     size_t v_i = 0;
     size_t v_j = 0;
     size_t v_k = 0;
-    op_result_t feedback = NULL;
+    op_result_t feedback = 0;
 
     v_i = vector_1->j * vector_2->k - vector_1->k * vector_2->j;
     v_j = - (vector_1->i * vector_2->k - vector_1->k * vector_2->i);
@@ -82,7 +82,7 @@ op_result_t vector_sum(three_d_vector_t* output_vector,
     size_t v_i = 0;
     size_t v_j = 0;
     size_t v_k = 0;
-    op_result_t feedback = NULL;
+    op_result_t feedback = 0;
 
     v_i = vector_1->i + vector_2->i;
     v_j = vector_1->j + vector_2->j;
@@ -107,7 +107,7 @@ op_result_t vector_sub(three_d_vector_t* output_vector,
     size_t v_i = 0;
     size_t v_j = 0;
     size_t v_k = 0;
-    op_result_t feedback = NULL;
+    op_result_t feedback = 0;
 
     v_i = vector_1->i - vector_2->i;
     v_j = vector_1->j - vector_2->j;
