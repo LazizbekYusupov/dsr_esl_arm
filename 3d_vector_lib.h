@@ -25,16 +25,16 @@ op_result_t vector_dot_product(size_t*           output,
                                three_d_vector_t* vector_2);
 
 //find the cross product of the two vectors. Аccepts pointers to vectors and pours it to output vector by pointer.
-three_d_vector_t vector_cross_product(three_d_vector_t* output_vector,
+op_result_t vector_cross_product(three_d_vector_t* output_vector,
                                       three_d_vector_t* vector_1, 
                                       three_d_vector_t* vector_2);
 
 //accepts pointers to vectors and pours it to output vector by pointer.
-three_d_vector_t vector_sum(three_d_vector_t* output_vector,
+op_result_t vector_sum(three_d_vector_t* output_vector,
                             three_d_vector_t* vector_1, 
                             three_d_vector_t* vector_2);
 
 //accepts pointers to vectors and pours it to output vector by pointer.
-three_d_vector_t vector_sub(three_d_vector_t* output_vector, 
+op_result_t vector_sub(three_d_vector_t* output_vector, 
                             three_d_vector_t* vector_1, 
                             three_d_vector_t* vector_2);

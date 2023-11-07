@@ -50,7 +50,7 @@ op_result_t vector_dot_product(size_t*           output,
     return SUCCESS;
 }
 
-three_d_vector_t vector_cross_product(three_d_vector_t* output_vector,
+op_result_t vector_cross_product(three_d_vector_t* output_vector,
                                       three_d_vector_t* vector_1, 
                                       three_d_vector_t* vector_2)
 {
@@ -75,7 +75,7 @@ three_d_vector_t vector_cross_product(three_d_vector_t* output_vector,
     }
 }
 
-three_d_vector_t vector_sum(three_d_vector_t* output_vector,
+op_result_t vector_sum(three_d_vector_t* output_vector,
                             three_d_vector_t* vector_1, 
                             three_d_vector_t* vector_2)
 {
@@ -100,7 +100,7 @@ three_d_vector_t vector_sum(three_d_vector_t* output_vector,
     }
 }
 
-three_d_vector_t vector_sub(three_d_vector_t* output_vector, 
+op_result_t vector_sub(three_d_vector_t* output_vector, 
                             three_d_vector_t* vector_1, 
                             three_d_vector_t* vector_2)
 {
