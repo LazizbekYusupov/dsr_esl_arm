@@ -54,23 +54,73 @@ three_d_vector_t vector_cross_product(three_d_vector_t* output_vector,
                                       three_d_vector_t* vector_1, 
                                       three_d_vector_t* vector_2)
 {
+    size_t v_i = 0;
+    size_t v_j = 0;
+    size_t v_k = 0;
+    op_result_t feedback = NULL;
 
+    v_i = vector_1->j * vector_2->k - vector_1->k * vector_2->j;
+    v_j = - (vector_1->i * vector_2->k - vector_1->k * vector_2->i);
+    v_k = vector_1->i * vector_2->j - vector_1->j * vector_2->i;
 
-    return SUCCESS;
+    feedback = vector_assign(output_vector, v_i, v_j, v_k);
+
+    if (feedback == SUCCESS)
+    {
+        return SUCCESS;
+    }
+    else
+    {
+        return ERROR;
+    }
 }
 
 three_d_vector_t vector_sum(three_d_vector_t* output_vector,
                             three_d_vector_t* vector_1, 
                             three_d_vector_t* vector_2)
 {
+    size_t v_i = 0;
+    size_t v_j = 0;
+    size_t v_k = 0;
+    op_result_t feedback = NULL;
 
+    v_i = vector_1->i + vector_2->i;
+    v_j = vector_1->j + vector_2->j;
+    v_k = vector_1->k + vector_2->k;
 
-    return SUCCESS;
+    feedback = vector_assign(output_vector, v_i, v_j, v_k);
+
+    if (feedback == SUCCESS)
+    {
+        return SUCCESS;
+    }
+    else
+    {
+        return ERROR;
+    }
 }
 
 three_d_vector_t vector_sub(three_d_vector_t* output_vector, 
                             three_d_vector_t* vector_1, 
                             three_d_vector_t* vector_2)
 {
-    return SUCCESS;
+    size_t v_i = 0;
+    size_t v_j = 0;
+    size_t v_k = 0;
+    op_result_t feedback = NULL;
+
+    v_i = vector_1->i - vector_2->i;
+    v_j = vector_1->j - vector_2->j;
+    v_k = vector_1->k - vector_2->k;
+
+    feedback = vector_assign(output_vector, v_i, v_j, v_k);
+
+    if (feedback == SUCCESS)
+    {
+        return SUCCESS;
+    }
+    else
+    {
+        return ERROR;
+    }
 }
