@@ -13,8 +13,8 @@ int main(void)
     vector_init(&vector_1);
     vector_init(&vector_2);
 
-
-
+    vector_assign(&vector_1, 1, 2, 3);
+    vector_assign(&vector_2, 4, 5, 7);
 
     return 0;
 }

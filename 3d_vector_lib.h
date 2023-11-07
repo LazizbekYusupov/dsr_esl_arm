@@ -17,7 +17,7 @@ typedef struct three_d_vector_
 op_result_t vector_init(three_d_vector_t* input_vector);
 
 //assign manually some values to play with
-op_result_t vector_assign(three_d_vector_t* input_vector);
+op_result_t vector_assign(three_d_vector_t* input_vector, size_t i, size_t j, size_t k);
 
 //find dot product of the two vectors
 op_result_t vector_dot_product(size_t*           output,
